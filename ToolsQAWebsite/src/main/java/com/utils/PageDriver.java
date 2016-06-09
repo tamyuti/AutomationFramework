@@ -128,6 +128,12 @@ public class PageDriver {
 		js.executeScript(s);
 	}
 	
+	public String titleExecutor(){
+		JavascriptExecutor js=(JavascriptExecutor)driver;
+		String s=js.executeScript("return document.title").toString();
+		return s;
+	}
+	
 	public void DriverNavigateTo(String s){
 		driver.navigate().to(s);
 	}

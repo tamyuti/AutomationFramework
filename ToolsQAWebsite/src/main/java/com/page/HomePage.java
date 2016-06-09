@@ -82,6 +82,10 @@ public class HomePage extends BasePage {
 		return size;
 	}
 
+	public String title(){
+		String s=driver.titleExecutor();
+		return s;
+	}
 	public boolean navBar(){
 		boolean isNumNavBar=false;
 		

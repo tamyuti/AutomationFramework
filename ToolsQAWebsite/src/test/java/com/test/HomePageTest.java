@@ -42,6 +42,10 @@ public class HomePageTest extends BasePageTest {
 		assertTrue(hp.navBar());
 	}
 	
+	@Test
+	public void titleHomepage(){
+		System.out.println("Title of HomePage:" +hp.title());
+	}
 	
 	@Test
 	public void testScreenshot(){
